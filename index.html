@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchizoCare - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #93c5fd, #4f46e5);
+        }
+    </style>
+</head>
+<body class="text-white font-sans">
+    <!-- Navigation Bar -->
+<nav class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-white text-2xl font-semibold">SchizoCare</a>
+        <div class="md:hidden">
+            <!-- Mobile menu button (hamburger icon) -->
+            <button id="mobile-menu-button" class="focus:outline-none">
+                <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2 4a2 2 0 012-2h14a2 2 0 110 4H4a2 2 0 01-2-2zm0 6a2 2 0 012-2h14a2 2 0 110 4H4a2 2 0 01-2-2zm0 6a2 2 0 012-2h14a2 2 0 110 4H4a2 2 0 01-2-2z"/></svg>
+            </button>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden absolute top-16 right-0 bg-gray-900 text-white mt-2 p-4 space-y-2">
+                <a href="#" class="block hover:underline">Home</a>
+                <a href="#about" class="block hover:underline">About</a>
+                <a href="#contact" class="block hover:underline">Contact</a>
+            </div>
+        </div>
+        <!-- Desktop menu -->
+        <ul class="hidden md:flex space-x-4">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
+    <section id="hero" class="relative">
+        <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full">
+            <source src="invideo-ai-1080 Schizocare_ Revolutionizing Schizophreni 2023-09-30 (1) (online-video-cutter.com).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+        <!-- Content in the center -->
+        <div class="container mx-auto h-screen flex flex-col justify-center items-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-4">Transforming Schizophrenia Treatment with AI</h1>
+            <p class="text-lg md:text-xl text-center mb-8">Empowering individuals with advanced AI solutions for a better life.</p>
+            <a href="info.html" class="bg-blue-500 text-white px-6 py-3 rounded-full text-lg hover:bg-blue-600 transition duration-300 ease-in-out">learn more</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-semibold text-center mb-8">About SchizoCare AI</h2>
+            <p class="text-lg md:text-xl text-center">SchizoCare AI is dedicated to using cutting-edge artificial intelligence technology to improve the lives of individuals affected by schizophrenia. Our mission is to provide innovative solutions that offer hope and recovery.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-semibold text-center mb-8">Contact Us</h2>
+            <ul class="text-lg md:text-xl text-center mb-4">
+                <li>Email: hello123@gmail.com</li>
+                <li>Phone: +919xxxxxxxxx</li>
+                <li>Address: India</li>
+            </ul>
+            <p class="text-lg md:text-xl text-center">Reach out to us anytime. We're here to help.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-opacity-80 backdrop-blur-lg py-4 text-center">
+        <p>&copy; 2023 SchizoCare AI. All rights reserved.</p>
+    </footer>
+</body>
+</html>
